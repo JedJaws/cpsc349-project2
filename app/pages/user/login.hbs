@@ -1,6 +1,5 @@
 <form action="/user/login" method="post">
-<body>
-  <div class="relative bg-purple-700 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+  <div class="relative bg-purple-900 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
     <div class="space-y-6 py-8 text-base leading-7 text-black-600">
       <div class="flex justify-center">
         <h1 class="text-4xl text-white">Lofidoro</h1>
@@ -8,13 +7,11 @@
       <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="username" placeholder="username" required>
       <input type="password" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="password" placeholder="password" required>
       <div class="flex justify-center">
-        <button class="bg-purple-500 text-white active:bg-purple-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg bg-clip-padding border outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="submit">Log in</button>
+        <button class="text-white border hover:bg-purple-700 hover:text-white active:bg-purple-400 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="submit">Log in</button>
       </div>
       <div class="flex justify-center">
-        <a href="/user/forgot">Forgot your password?</a>
+        <a class="text-white" href="/user/forgot">Forgot your password?</a>
       </div>
     </div>
   </div>
-</body>
-  
 </form>
