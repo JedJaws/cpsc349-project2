@@ -1,8 +1,12 @@
-<h1>Welcome to my app!</h1>
+<div class="flex justify-center">
+  <h1>Welcome to Lofidoro!</h1>
+</div>
 <ul>
   {{#if currentUser}}
     <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
   {{else}}
-    <li><a href="/user/signup">Sign up for an account</a></li>
+    <div class="flex justify-center">
+      <li><a href="/user/signup">Sign up for an account</a></li>
+    </div>
   {{/if}}
 </ul>
