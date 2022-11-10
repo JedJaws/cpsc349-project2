@@ -1,13 +1,22 @@
-<body background="3157.jpg">
+<body>
   <form action="/user/signup" method="post">
   <div class="relative bg-purple-900 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
     <div class="space-y-6 py-8 text-base leading-7 text-black-600">
       <div class="flex justify-center">
-        <h1 class=" text-3xl text-white ">Welcome to Expense Tracker!</h1>
+        <h1 class=" text-3xl text-white ">Welcome to Expense Tracker</h1>
+      </div>
+      <div class="flex justify-center">
+        <p class="text-white text-center">Stop living paycheck to paycheck and take control of your spending today!</p>
+        <ul>
+          <li></li>
+
+        </ul>
       </div>
       <ul>
         {{#if currentUser}}
-          <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+          <div class="flex justify-center text-white underline">
+            <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+          </div>
         {{else}}
           <div class="flex justify-center text-white underline">
             <li><a href="/user/signup">Sign up for an account</a></li>
@@ -16,17 +25,5 @@
       </ul>
     </div>
   </div>
-</form>
-  <!--<div class="flex justify-center">
-    <h1>Welcome to Expense Tracker!</h1>
-  </div>
-  <ul>
-    {{#if currentUser}}
-      <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
-    {{else}}
-      <div class="flex justify-center">
-        <li><a href="/user/signup">Sign up for an account</a></li>
-      </div>
-    {{/if}}
-  </ul>-->
+  </form>
 </body>
